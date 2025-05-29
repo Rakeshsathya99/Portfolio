@@ -1,0 +1,79 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog
+/Outlines 2 0 R
+/Pages 3 0 R >>
+endobj
+2 0 obj
+<< /Type /Outlines /Count 0 >>
+endobj
+3 0 obj
+<< /Type /Pages
+/Kids [6 0 R]
+/Count 1
+>>
+endobj
+4 0 obj
+<< /ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/Font << /F1 9 0 R >>
+>>
+endobj
+5 0 obj
+<<
+/Producer (Portfolio Sample Resume)
+/CreationDate (D:20250101000000)
+>>
+endobj
+6 0 obj
+<< /Type /Page
+/Parent 3 0 R
+/MediaBox [0 0 612 792]
+/CropBox [0 0 612 792]
+/BleedBox [0 0 612 792]
+/TrimBox [0 0 612 792]
+/ArtBox [0 0 612 792]
+/Contents 7 0 R
+/Resources 4 0 R
+>>
+endobj
+7 0 obj
+<< /Length 8 0 R >>
+stream
+BT
+/F1 12 Tf
+100 700 Td
+(Sample Resume - Replace with actual resume) Tj
+ET
+endstream
+endobj
+8 0 obj
+77
+endobj
+9 0 obj
+<< /Type /Font
+/Subtype /Type1
+/Name /F1
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+>>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000009 00000 n 
+0000000074 00000 n 
+0000000120 00000 n 
+0000000179 00000 n 
+0000000269 00000 n 
+0000000356 00000 n 
+0000000556 00000 n 
+0000000688 00000 n 
+0000000707 00000 n 
+trailer
+<< /Size 10
+/Root 1 0 R
+/Info 5 0 R
+>>
+startxref
+814
+%%EOF

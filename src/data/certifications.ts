@@ -1,0 +1,57 @@
+import { Certification } from '../types';
+
+export const certifications: Certification[] = [
+  {
+    id: '1',
+    title: 'AWS Certified Cloud Practitioner',
+    issuer: 'Amazon Web Services',
+    date: 'February 21 2025',
+    expirationDate: 'February 21 2028',
+    description: 'This certification validates expertise in designing distributed systems on AWS. It demonstrates the ability to architect and deploy secure and robust applications on AWS technologies.',
+    skills: ['AWS', 'Cloud Architecture', 'Infrastructure as Code', 'Security', 'High Availability'],
+    credentialId: '600041b6b8784cc591d137280c587df8',
+    verificationUrl: 'https://aws.amazon.com/verification',
+  },
+  {
+    id: '2',
+    title: 'Cloud Computing Foundations',
+    issuer: 'IBM',
+    date: 'March 2019',
+    description: 'This certification verifies proficiency in creating responsive and interactive front-end web applications using modern JavaScript frameworks, with a focus on React.',
+    skills: ['Cloud Computing', 'Cloud Architecture', 'Cloud Security', 'Cloud Networking', 'Cloud Storage'],
+    // credentialId: 'META-FED-67890',
+    // verificationUrl: 'https://www.meta.com/certification/verify',
+  },
+  {
+    id: '3',
+    title: 'Automation Anywhere Certified Advanced RPA Professional',
+    issuer: 'Automation Anywhere',
+    date: 'Issued: Not specified',
+    description: 'This certification validates advanced knowledge of RPA development using Automation Anywhere’s platform. It demonstrates expertise in designing complex bots and automating enterprise-grade business processes.',
+    skills: ['RPA', 'Automation Anywhere', 'Bot Development', 'Process Automation'],
+    credentialId: 'AAADVC-114288822',
+    verificationUrl: 'https://www.automationanywhere.com/',
+  },
+  {
+    id: '4',
+    title: 'Automation Anywhere Certified Essentials Automation Professional',
+    issuer: 'Automation Anywhere',
+    date: 'August 29, 2024',
+    expirationDate: 'August 29, 2026',
+    description: 'This certification demonstrates foundational skills in automation using Automation Anywhere. It focuses on the core concepts and capabilities needed to begin developing bots on the platform.',
+    skills: ['RPA', 'Automation Anywhere', 'Bot Creation', 'Automation Fundamentals'],
+    credentialId: 'AAESSE2024A360 - 113923871',
+    verificationUrl: 'https://www.automationanywhere.com/',
+  },
+  {
+    id: '5',
+    title: 'Automation Anywhere Certified Advanced RPA Professional (2024)',
+    issuer: 'Automation Anywhere',
+    date: 'September 16, 2024',
+    expirationDate: 'September 16, 2026',
+    description: 'This updated certification confirms advanced proficiency in developing RPA solutions using Automation Anywhere’s 2024 platform release. It includes complex bot creation, error handling, and bot deployment best practices.',
+    skills: ['RPA', 'Automation Anywhere', 'Advanced Bot Development', 'Error Handling', 'Enterprise Automation'],
+    credentialId: 'AAADVC2024A360 - 115510658',
+    verificationUrl: 'https://www.automationanywhere.com/',
+  }
+]
