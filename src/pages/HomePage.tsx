@@ -51,11 +51,6 @@ const HomePage: React.FC = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-center">
               Hi, I'm <span className="text-primary-500">Rakesh S</span>
               <br />
-              <span className="text-3xl md:text-4xl">
-                <span className="text-gray-700 dark:text-gray-300">I build </span>
-                <span className="text-primary-500">innovative</span>
-                <span className="text-gray-700 dark:text-gray-300"> digital solutions</span>
-              </span>
             </h1>
             
             <h2 className="text-xl sm:text-2xl md:text-3xl text-gray-700 dark:text-gray-300 mb-6 text-center">
