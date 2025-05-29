@@ -82,7 +82,18 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           </div>
           
           <div className="flex flex-wrap gap-4 mt-6">
-            {project.liveUrl && (
+            {/* Show Lynkt Admin Web Application live demo button if available */}
+            {project.title === 'Lynkt Admin Web Application' && project.liveDemoUrl && (
+              <Button 
+                variant="primary"
+                icon={<ExternalLink size={18} />}
+                onClick={() => window.open(project.liveDemoUrl, '_blank')}
+              >
+                Live Demo
+              </Button>
+            )}
+            {/* For other projects, show liveUrl if available */}
+            {project.title !== 'Lynkt Admin Web Application' && project.liveUrl && project.liveUrl !== 'Not Deployed' && (
               <Button 
                 variant="primary"
                 icon={<ExternalLink size={18} />}
@@ -91,7 +102,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 Live Demo
               </Button>
             )}
-            {project.githubUrl && (
+            {project.githubUrl && project.githubUrl !== 'Private Repository' && (
               <Button 
                 variant="outline"
                 icon={<Github size={18} />}

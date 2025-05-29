@@ -65,7 +65,7 @@ const Footer: React.FC = () => {
         {/* Copyright and bottom bar */}
         <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700 text-center">
           <p className="text-gray-600 dark:text-gray-400">
-            © {currentYear} Portfolio. All rights reserved.
+            © {currentYear} Rakesh S. All rights reserved.
           </p>
         </div>
       </div>

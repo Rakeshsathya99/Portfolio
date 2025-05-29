@@ -98,6 +98,7 @@ export const projects: Project[] = [
       ],
       githubUrl: 'Private Repository',
       liveUrl: 'https://www.lynkt.co/',
+      liveDemoUrl: 'https://www.lynkt.co/demo',
     },    
 
   ];
