@@ -157,7 +157,7 @@ const ContactPage: React.FC = () => {
                 <h4 className="font-semibold mb-4">Connect with Me</h4>
                 <div className="flex space-x-4">
                   <a 
-                    href="https://github.com" 
+                    href="https://github.com/Rakeshsathya99" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="bg-gray-100 dark:bg-dark-300 p-3 rounded-full hover:bg-primary-100 dark:hover:bg-primary-900/30 transition-colors"
@@ -167,7 +167,7 @@ const ContactPage: React.FC = () => {
                     </svg>
                   </a>
                   <a 
-                    href="https://www.linkedin.com/in/rakesh-s-" 
+                    href="https://www.linkedin.com/in/rakesh-s-18089a245/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="bg-gray-100 dark:bg-dark-300 p-3 rounded-full hover:bg-primary-100 dark:hover:bg-primary-900/30 transition-colors"

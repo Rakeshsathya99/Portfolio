@@ -2,9 +2,10 @@ import React, { Suspense, lazy } from 'react';
 import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { ThemeProvider } from './context/ThemeContext';
 import { CursorProvider } from './context/CursorContext';
-import CustomCursor from './components/cursor/CustomCursor';
+import CustomCursor from './components/common/CustomCursor';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
+import Loader from './components/common/Loader';
 
 // Lazy load pages
 const HomePage = lazy(() => import('./pages/HomePage'));
@@ -32,7 +33,7 @@ function App() {
             <CustomCursor />
             <Navbar />
             <main className="flex-grow">
-              <Suspense fallback={<div className="text-center py-20">Loading...</div>}>
+              <Suspense fallback={<Loader />}>
                 <Routes>
                   <Route path="/" element={<HomePage />} />
                   <Route path="/about" element={<AboutPage />} />

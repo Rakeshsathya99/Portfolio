@@ -336,7 +336,7 @@ const AboutPage: React.FC = () => {
                   key={tech}
                   whileHover={{ scale: 1.05 }}
                   className="bg-gradient-to-r from-primary-500/10 to-secondary-500/10 dark:from-primary-900/20 dark:to-secondary-900/20 px-4 py-2 rounded-full cursor-pointer"
-                  onClick={() => window.location.href = '/certifications'}
+                  onClick={() => window.location.hash = '#/certifications'}
                 >
                   <span className="text-gray-700 dark:text-gray-300">{tech}</span>
                 </motion.div>

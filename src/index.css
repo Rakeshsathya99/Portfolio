@@ -12,6 +12,7 @@
     @apply transition-colors duration-300;
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
+    cursor: none; /* Remove default cursor */
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -102,4 +103,58 @@
     @apply fixed top-0 left-0 w-16 h-16 rounded-full border-2 border-primary-500 pointer-events-none z-50 mix-blend-difference;
     transform: translate(-50%, -50%);
   }
+}
+
+/* Custom Cursor */
+.custom-cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: theme('colors.primary.500');
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  mix-blend-mode: difference;
+  transition: width 0.2s ease, height 0.2s ease;
+}
+
+.custom-cursor.hover {
+  width: 60px;
+  height: 60px;
+  opacity: 0.5;
+}
+
+/* Disable default cursor on interactive elements */
+a, button, input, textarea, select {
+  cursor: none !important;
+}
+
+/* Hover states */
+a:hover, button:hover, .hover-effect {
+  cursor: none;
+}
+
+/* Prevent text selection cursor */
+::selection {
+  background-color: theme('colors.primary.500');
+  color: white;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: theme('colors.gray.100');
+}
+
+::-webkit-scrollbar-thumb {
+  background: theme('colors.primary.500');
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: theme('colors.primary.600');
 }

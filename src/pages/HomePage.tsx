@@ -40,7 +40,7 @@ const HomePage: React.FC = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center relative overflow-hidden">
+      <section className="min-h-screen flex flex-col justify-center items-center relative overflow-hidden">
         <div className="container mx-auto px-4 md:px-8 z-10 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -70,7 +70,7 @@ const HomePage: React.FC = () => {
               />
             </h2>
             
-            <div className="flex justify-center gap-4">
+            <div className="flex flex-wrap justify-center gap-4 w-full">
               <Link to="/projects">
                 <Button variant="primary">
                   View My Work
@@ -161,7 +161,7 @@ const HomePage: React.FC = () => {
               Here are some of the technologies and tools I work with.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {skills.map((skill) => (
               <SkillCard
                 key={skill.id}
@@ -191,7 +191,7 @@ const HomePage: React.FC = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Project cards will go here */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}

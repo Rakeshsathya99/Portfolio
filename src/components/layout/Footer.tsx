@@ -17,15 +17,15 @@ const Footer: React.FC = () => {
 
   return (
     <footer className="bg-light-200 dark:bg-dark-100 py-10 mt-16">
-      <div className="container mx-auto px-4 md:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="container mx-auto px-4 md:px-8 py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {/* Profile Column */}
-          <div>
-            <h2 className="text-lg font-bold mb-2">Rakesh S</h2>
-            <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
-              I'm an AWS-certified and full-stack developer with experience in React.js and React Native — building responsive, cross-platform applications.
+          <div className="text-center md:text-left col-span-1 sm:col-span-2 md:col-span-1">
+            <h2 className="text-lg font-bold mb-4">Rakesh S</h2>
+            <p className="text-gray-600 dark:text-gray-400 mb-4">
+              AWS-certified full-stack developer specializing in React.js and React Native, passionate about creating innovative digital solutions.
             </p>
-            <div className="flex space-x-4 mt-2">
+            <div className="flex justify-center md:justify-start space-x-4">
               {socialLinks.map((link, index) => (
                 <a
                   key={index}
@@ -43,21 +43,21 @@ const Footer: React.FC = () => {
             </div>
           </div>
           {/* Quick Links Column */}
-          <div>
-            <h2 className="text-lg font-bold mb-2 text-center">Quick Links</h2>
-            <ul className="space-y-2 text-gray-600 dark:text-gray-400 text-sm justify-items-center">
-              <li><Link to="/" className="hover:underline">Home</Link></li>
-              <li><Link to="/about" className="hover:underline">About</Link></li>
-              <li><Link to="/projects" className="hover:underline">Projects</Link></li>
-              <li><Link to="/contact" className="hover:underline">Contact</Link></li>
+          <div className="text-center md:text-left">
+            <h2 className="text-lg font-bold mb-2 text-center md:text-left">Quick Links</h2>
+            <ul className="space-y-2 text-gray-600 dark:text-gray-400 text-sm justify-items-center md:justify-items-start">
+              <li className="text-center md:text-left"><Link to="/" className="hover:underline">Home</Link></li>
+              <li className="text-center md:text-left"><Link to="/about" className="hover:underline">About</Link></li>
+              <li className="text-center md:text-left"><Link to="/projects" className="hover:underline">Projects</Link></li>
+              <li className="text-center md:text-left"><Link to="/contact" className="hover:underline">Contact</Link></li>
             </ul>
           </div>
           {/* Contact Column */}
-          <div>
-            <h2 className="text-lg font-bold mb-2">Contact</h2>
+          <div className="text-center md:text-left">
+            <h2 className="text-lg font-bold mb-2 text-center md:text-left">Contact</h2>
             <ul className="space-y-2 text-gray-600 dark:text-gray-400 text-sm">
+              <li>Bangalore, India</li>
               <li>srakeshshetty7@gmail.com</li>
-              <li>Bengaluru, India</li>
               <li>+91 7892632358</li>
             </ul>
           </div>

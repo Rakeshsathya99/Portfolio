@@ -21,8 +21,8 @@ export const projects: Project[] = [
         'Responsive design for all devices',
         'Cross-browser compatibility including IE 6.0+',
       ],
-      githubUrl: 'https://github.com/username/movie-ticket-booking-app',
-      liveUrl: 'https://moviebooking-demo.example.com',
+      // githubUrl: 'https://github.com/username/movie-ticket-booking-app',
+      // liveUrl: 'https://moviebooking-demo.example.com',
     },
     {
       id: '2',
@@ -39,8 +39,8 @@ export const projects: Project[] = [
         'User-friendly interface with smooth navigation',
         'Multi-platform support (Windows/Linux, Chrome/IE 6.0+)',
       ],
-      githubUrl: 'https://github.com/username/movie-streaming-app',
-      liveUrl: 'https://moviestreaming-demo.example.com',
+      // githubUrl: 'https://github.com/username/movie-streaming-app',
+      // liveUrl: 'https://moviestreaming-demo.example.com',
     },
     {
       id: '3',
@@ -57,8 +57,8 @@ export const projects: Project[] = [
         'Portfolio tracking and transaction history',
         'Email verification and security features',
       ],
-      githubUrl: 'https://github.com/username/bitcoin-trading-app',
-      liveUrl: 'https://bitcointrading-demo.example.com',
+      // githubUrl: 'https://github.com/username/bitcoin-trading-app',
+      // liveUrl: 'https://bitcointrading-demo.example.com',
     },
     {
       id: '4',
@@ -98,7 +98,7 @@ export const projects: Project[] = [
       ],
       githubUrl: 'Private Repository',
       liveUrl: 'https://www.lynkt.co/',
-      liveDemoUrl: 'https://www.lynkt.co/demo',
+      liveDemoUrl: 'https://www.lynkt.co',
     },    
 
   ];
