@@ -26,22 +26,22 @@ const Footer: React.FC = () => {
               AWS-certified full-stack developer specializing in React.js and React Native, passionate about creating innovative digital solutions.
             </p>
             <div className="flex justify-center md:justify-start space-x-4">
-              {socialLinks.map((link, index) => (
-                <a
-                  key={index}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 rounded-full bg-white dark:bg-dark-200 text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
-                  aria-label={link.label}
-                  onMouseEnter={() => setCursorType('hover')}
-                  onMouseLeave={() => setCursorType('default')}
-                >
-                  {link.icon}
-                </a>
-              ))}
-            </div>
+            {socialLinks.map((link, index) => (
+              <a
+                key={index}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded-full bg-white dark:bg-dark-200 text-gray-700 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 transition-colors"
+                aria-label={link.label}
+                onMouseEnter={() => setCursorType('hover')}
+                onMouseLeave={() => setCursorType('default')}
+              >
+                {link.icon}
+              </a>
+            ))}
           </div>
+        </div>
           {/* Quick Links Column */}
           <div className="text-center md:text-left">
             <h2 className="text-lg font-bold mb-2 text-center md:text-left">Quick Links</h2>
@@ -64,7 +64,7 @@ const Footer: React.FC = () => {
         </div>
         {/* Copyright and bottom bar */}
         <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700 text-center">
-          <p className="text-gray-600 dark:text-gray-400">
+            <p className="text-gray-600 dark:text-gray-400">
             © {currentYear} Rakesh S. All rights reserved.
           </p>
         </div>

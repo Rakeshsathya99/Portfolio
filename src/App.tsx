@@ -6,7 +6,7 @@ import CustomCursor from './components/common/CustomCursor';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Loader from './components/common/Loader';
-
+import ChatWidget from './components/chatbot/ChatWidget';
 // Lazy load pages
 const HomePage = lazy(() => import('./pages/HomePage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
@@ -43,6 +43,7 @@ function App() {
                 </Routes>
               </Suspense>
             </main>
+            <ChatWidget />
             <Footer />
           </div>
         </Router>
