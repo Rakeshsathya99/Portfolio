@@ -51,13 +51,13 @@ const ChatWidget: React.FC = () => {
     setMessages(newMessages);
     setInput("");
     try {
-        const res = await fetch("http://localhost:5000/api/chat", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-              messages: newMessages.filter(m => m.role !== "system")
-            }),
-          });
+      const res = await fetch("/api/chat", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ messages }),
+      });
       if (!res.ok) throw new Error("Failed to fetch AI response");
       const data = await res.json();
       setMessages([
